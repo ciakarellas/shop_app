@@ -20,7 +20,7 @@ RSpec.describe "/products", type: :request do
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    { name: '' }
   }
 
   describe "GET /index" do
