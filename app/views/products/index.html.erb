@@ -34,11 +34,20 @@
               <div>
                 In stock: <span class="is-size-6 has-text-weight-semibold	"><%= product.quantity %></span>
               </div>
-              <span class="button is-link">
-                <%= link_to(product) do %>
-                  <span class="has-text-white is-size-6 has-text-weight-semibold">Details</span>
-                <% end %>
-              </span>
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <span class="button is-link">
+                    <%= link_to(product) do %>
+                      <span class="has-text-white is-size-6 has-text-weight-semibold">Details</span>
+                    <% end %>
+                  </span>
+                </div>
+                <div class="column">
+                  <span class="icon is-small">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -9,4 +9,10 @@ RSpec.describe "products/show", type: :view do
   it "renders attributes in <p>" do
     render
   end
+
+  it 'allows to add to cart' do
+    render
+
+    expect(rendered).to match(/shopping-cart/)
+  end
 end
