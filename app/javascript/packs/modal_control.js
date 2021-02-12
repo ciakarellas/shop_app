@@ -22,4 +22,9 @@ document.addEventListener("turbolinks:load", function(event) {
         document.querySelector('html').classList.remove('is-clipped');
       })
     })
+
+    let buttons = document.getElementsByClassName('delete-modal');
+    for(let i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = false;
+    }
   })

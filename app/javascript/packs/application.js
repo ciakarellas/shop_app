@@ -12,5 +12,6 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 import "@fortawesome/fontawesome-free/css/all"
-require("packs/modal_control.js" );
+require("packs/modal_control.js")
+require('packs/plus_minus_control.js')
 
